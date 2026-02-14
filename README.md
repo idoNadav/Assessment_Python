@@ -187,21 +187,21 @@ Tested with at least 3 different names as required by the assessment:
 
 1. **"SMITH"** (Common name - multiple results):
    - Records found: **2000**
-   - Status: ✅ Success
+   - Status: Success
    - Performance: ~60 seconds
    - Notes: Common surname, returned maximum results (API limit of 2000 records)
    - Output file: `outputs/seminole_test_smith.json`
 
 2. **"JOHNSON"** (Common name - multiple results):
    - Records found: **2000**
-   - Status: ✅ Success
+   - Status: Success
    - Performance: ~60 seconds
    - Notes: Common surname, returned maximum results (API limit of 2000 records)
    - Output file: `outputs/seminole_test_johnson.json`
 
 3. **"XYZZYABRACADABRA"** (Rare name - few/no results):
    - Records found: **0**
-   - Status: ✅ Success (correctly handled no results)
+   - Status: Success (correctly handled no results)
    - Performance: ~2 seconds
    - Notes: Fictional/rare name, correctly returned empty results without errors
    - Output file: `outputs/seminole_test_rare.json`
@@ -211,7 +211,7 @@ Tested with at least 3 different names as required by the assessment:
 - **Performance**: 
   - Large result sets (2000 records): ~60 seconds
   - Empty results: ~2 seconds
-- **Edge case handling**: ✅ Correctly handles both common names (many results) and rare names (no results)
+- **Edge case handling**: Correctly handles both common names (many results) and rare names (no results)
 - **API behavior**: Returns up to 2000 records per search (API limit)
 - **Error handling**: All searches completed without errors, including the rare name case
 
